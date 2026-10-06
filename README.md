@@ -5,7 +5,7 @@ This is the code that handles your private key at [notrandom.fun](https://notran
 ## How your key stays yours
 
 1. **Your browser makes a lock.** Before you pay, it creates an RSA-3072 key pair for your order. It sends us the public half (the lock) and keeps the private half (the key) on your device.
-2. **Our GPU finds your address and seals it on the spot.** The worker runs the open-source [`vanity`](https://github.com/cavemanloverboy/vanity) engine on a RAM disk, checks the key it finds with a second library, and encrypts it with your lock before anything leaves the machine.
+2. **Our GPU finds your address and seals it on the spot.** The worker runs the notrandom engine on a RAM disk, checks the key it finds with a second library, and encrypts it with your lock before anything leaves the machine.
 3. **Only your browser can open it.** Our servers only ever hold the sealed copy. Your browser opens it, checks it, and hands you your key.
 
 ## What's here
